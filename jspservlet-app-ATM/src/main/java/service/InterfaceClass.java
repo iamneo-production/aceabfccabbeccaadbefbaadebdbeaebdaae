@@ -1,8 +1,8 @@
+// InterfaceClass.java
 package service;
 
-interface InterfaceClass {
-    public abstract double withdrawAmount(double amount,double balance);
-    public abstract double depositAmount(double amount,double balance);
-    public abstract double accountBalance(double balance);
-	
+public interface InterfaceClass {
+    double withdrawAmount(double currentBalance, double amountToWithdraw);
+    double depositAmount(double currentBalance, double amountToDeposit);
+    double accountBalance(double currentBalance);
 }
